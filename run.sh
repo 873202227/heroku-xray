@@ -12,7 +12,7 @@ mkdir /usr/local/etc/xray
 mkdir /var/log/xray
 
 unzip /tmp/Xray-linux-64.zip -d /tmp
-install -m 0755 /tmp/xray /usr/bin/xray
+install -m 0755 /tmp/xray /usr/local/bin/xray
 install -m 0644 /tmp/geoip.dat /usr/share/xray/geoip.dat
 install -m 0644 /tmp/dlc.dat /usr/share/xray/geosite.dat
 
