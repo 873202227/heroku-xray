@@ -7,9 +7,8 @@ wget "https://github.com/XTLS/Xray-core/releases/download/${XRAY_VERSION}/Xray-l
 wget "https://github.com/v2fly/geoip/releases/latest/download/geoip.dat" -O /tmp/geoip.dat
 wget "https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat" -O /tmp/dlc.dat
 
-mkdir /usr/local/share/xray
-mkdir /usr/local/etc/xray
-mkdir /var/log/xray
+mkdir -p /usr/local/share/xray
+mkdir -p /usr/local/etc/xray
 
 unzip /tmp/Xray-linux-64.zip -d /tmp
 install -m 0755 /tmp/xray /usr/local/bin/xray
